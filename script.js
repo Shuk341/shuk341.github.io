@@ -1,5 +1,6 @@
 // Typing Effect
-let text = "Web Developer | WordPress | Shopify Expert";
+//let text = "Web Developer | WordPress | Shopify Expert";
+let text = "Web Developer | WordPress, Shopify & Frontend Specialist  <br> Building responsive, high-performing websites with a data-driven approach";
 let i = 0;
 
 function typing() {
