@@ -1,5 +1,5 @@
 // Typing
-let text = "Web Developer | WordPress | Shopify Specialist";
+let text = "WordPress | Shopify | Wix | Bootstrap";
 let i = 0;
 
 function typing() {
