@@ -15,11 +15,16 @@ body {
 /* HERO */
 .hero {
   text-align: center;
-  padding-top: 100px;
+  padding-top: 100px 20px;
 }
 
 .hero span {
   color: #00ffd5;
+}
+
+.tagline {
+  margin-top: 10px;
+  color: #aaa;
 }
 
 /* SECTIONS */
@@ -31,6 +36,20 @@ section {
 .note {
   color: #aaa;
   padding: 10px;
+}
+
+
+/* ABOUT */
+.about-list {
+  max-width: 600px;
+  margin: auto;
+  text-align: left;
+}
+
+/* EXPERIENCE */
+.exp-box {
+  max-width: 600px;
+  margin: auto;
 }
 
 /* TABS */
@@ -67,4 +86,25 @@ section {
 .project-card img {
   width: 100%;
   border-radius: 10px;
+}
+
+.tech {
+  color: #00ffd5;
+  font-size: 14px;
+}
+
+/* MODAL */
+.modal {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: #111;
+  padding: 20px;
 }
