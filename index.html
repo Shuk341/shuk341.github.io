@@ -9,52 +9,76 @@
 </head>
 
 <body>
+
 <!-- HERO -->
 <section class="hero">
   <h1>Hi, I'm <span>Shukla Haldar</span></h1>
   <p id="typing"></p>
+  <p class="tagline">Building responsive, high-performing websites with a data-driven approach</p>
 </section>
 
 <!-- ABOUT -->
 <section id="about">
   <h2>About Me</h2>
-  <p>
-    I am a Web Developer experienced in building responsive websites using WordPress (Elementor, Divi, WPBakery), Shopify, Wix, and Squarespace. I specialize in frontend development with HTML and CSS, focusing on clean design, responsiveness, and performance.
-<br>
-I have handled end-to-end frontend responsibilities across multiple projects, delivering user-friendly and optimized websites.
-<br>
-To expand my expertise, I have completed my Master’s in Data Science and Business Analytics, enabling me to incorporate a data-driven approach into web development.
-  </p>
+  <ul class="about-list">
+    <li>Experienced in WordPress, Shopify, Wix & frontend development</li>
+    <li>Built responsive business & e-commerce websites</li>
+    <li>Strong focus on UI/UX and performance</li>
+    <li>Master’s in Data Science & Business Analytics</li>
+  </ul>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <h2>Experience</h2>
+  <div class="exp-box">
+    <h3>Web Developer (Agency Experience)</h3>
+    <p>
+      Developed multiple client websites using WordPress, Shopify, and Wix. 
+      Worked on UI implementation, responsiveness, customization, and performance optimization.
+    </p>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <h2>Skills</h2>
+
+  <div class="tabs">
+    <button onclick="setActive(this, 'all')" class="active">All</button>
+    <button onclick="setActive(this, 'wordpress')">WordPress</button>
+    <button onclick="setActive(this, 'shopify')">Shopify</button>
+    <button onclick="setActive(this, 'html')">HTML/CSS</button>
+  </div>
 </section>
 
 <!-- PROJECTS -->
 <section id="projects">
   <h2>Projects</h2>
-  <p class="note">*Client projects – live links not shared*</p>
- <div class="tabs">
-    <button onclick="filterProjects('all')">All</button>
-    <button onclick="filterProjects('wordpress')">WordPress</button>
-    <button onclick="filterProjects('shopify')">Shopify</button>
-    <button onclick="filterProjects('html')">HTML/CSS</button>
-  </div>
+  <p class="note">*Client projects – live links not shared due to confidentiality*</p>
+
   <div class="project-grid">
 
-    <div class="project-card wordpress">
+    <div class="project-card wordpress" onclick="openModal('wp')">
       <img src="project1.jpg">
       <h3>Business Website</h3>
+      <p class="tech">WordPress | Elementor | Responsive Design</p>
     </div>
 
-    <div class="project-card shopify">
+    <div class="project-card shopify" onclick="openModal('shopify')">
       <img src="project2.jpg">
-      <h3>Shopify Store</h3>
+      <h3>E-commerce Store</h3>
+      <p class="tech">Shopify | UI/UX | Mobile Optimization</p>
     </div>
 
-    <div class="project-card html">
+    <div class="project-card html" onclick="openModal('html')">
       <img src="project3.jpg">
       <h3>Landing Page</h3>
+      <p class="tech">HTML | CSS | Performance Optimized</p>
     </div>
 
   </div>
+</section>
 </section>
 
 <!-- CONTACT -->
