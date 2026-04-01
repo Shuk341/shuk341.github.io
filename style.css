@@ -15,7 +15,7 @@ body {
 /* HERO */
 .hero {
   text-align: center;
-  padding-top: 100px 20px;
+  padding: 100px 20px;
 }
 
 .hero span {
@@ -38,19 +38,6 @@ section {
   padding: 10px;
 }
 
-
-/* ABOUT */
-.about-list {
-  max-width: 600px;
-  margin: auto;
-  text-align: left;
-}
-
-/* EXPERIENCE */
-.exp-box {
-  max-width: 600px;
-  margin: auto;
-}
 
 /* TABS */
 .tabs button {
