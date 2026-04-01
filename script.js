@@ -28,26 +28,57 @@ function setActive(button, category) {
 }
 
 // Modal
+let currentImages = [];
+let currentIndex = 0;
+
 function openModal(type) {
   const title = document.getElementById("modal-title");
   const text = document.getElementById("modal-text");
 
   if (type === "wp") {
-    title.innerText = "Business Website (WordPress)";
-    text.innerText = "Developed responsive WordPress website using Elementor/Divi with modern UI and performance optimization.";
+    currentImages = [
+      "images/projects/wp1.jpg",
+      "images/projects/wp2.jpg"
+    ];
+    title.innerText = "Business Website";
+    text.innerText = "WordPress website with UI optimization and responsiveness.";
   }
 
   if (type === "shopify") {
+    currentImages = [
+      "images/projects/shop1.jpg",
+      "images/projects/shop2.jpg"
+    ];
     title.innerText = "Shopify Store";
-    text.innerText = "Built e-commerce store with product pages, cart system and optimized UX.";
+    text.innerText = "E-commerce store with optimized UX.";
   }
 
   if (type === "html") {
+    currentImages = [
+      "images/projects/html1.jpg"
+    ];
     title.innerText = "Landing Page";
-    text.innerText = "Designed responsive landing page using HTML and CSS with clean UI.";
+    text.innerText = "HTML/CSS landing page.";
   }
 
+  currentIndex = 0;
+  showImage();
+
   document.getElementById("modal").style.display = "flex";
+}
+
+function showImage() {
+  document.getElementById("modal-image").src = currentImages[currentIndex];
+}
+
+function nextImage() {
+  currentIndex = (currentIndex + 1) % currentImages.length;
+  showImage();
+}
+
+function prevImage() {
+  currentIndex = (currentIndex - 1 + currentImages.length) % currentImages.length;
+  showImage();
 }
 
 function closeModal() {
