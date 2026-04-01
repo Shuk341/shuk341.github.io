@@ -1,5 +1,5 @@
 // Typing Effect
-let text = "Web Developer | WordPress | Shopify | Wix";
+let text = "WordPress | Shopify | Wix | SquareSpace";
 let i = 0;
 
 function typing() {
