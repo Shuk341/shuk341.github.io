@@ -11,69 +11,69 @@
 
 <body>
 
+<!-- NAVBAR -->
+<nav>
+  <h2>Shukla</h2>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
 <!-- HERO -->
 <section class="hero">
   <h1>Hi, I'm <span>Shukla Haldar</span></h1>
-  
-  <!-- FIXED ERROR HERE -->
-  <p class="tagline">Web Developer</p>
-
   <p id="typing"></p>
-
-  <p class="tagline">
-    Building responsive, high-performing websites with a data-driven approach
-  </p>
+  <a href="resume.pdf" download class="btn">Download Resume</a>
 </section>
 
 <!-- ABOUT -->
 <section id="about">
   <h2>About Me</h2>
-
   <p>
-    Developed multiple client websites using WordPress, Shopify, and Wix. 
-    Worked on UI implementation, responsiveness, customization, and performance optimization.
+    I am a Web Developer with experience in building responsive and user-focused websites using WordPress (Elementor, Divi, WPBakery), Shopify, Wix, and Squarespace.
+    I specialize in frontend development using HTML and CSS, focusing on clean design, performance, and seamless user experience.
+    
+    I have handled end-to-end frontend responsibilities including UI implementation, responsiveness, and optimization.
+    
+    I have also completed my Master’s in Data Science and Business Analytics, allowing me to bring a data-driven approach to web development and user experience.
   </p>
-
-  <ul class="about-list">
-    <li>Experienced in WordPress, Shopify, Wix & frontend development</li>
-    <li>Built responsive business & e-commerce websites</li>
-    <li>Strong focus on UI/UX and performance</li>
-    <li>Master’s in Data Science & Business Analytics</li>
-  </ul>
 </section>
 
-<!-- PROJECTS -->
-<section id="projects">
-  <h2>Projects</h2>
-  
-  <!-- TABS -->
+<!-- SKILLS -->
+<section id="skills">
+  <h2>Skills</h2>
+
   <div class="tabs">
     <button onclick="setActive(this, 'all')" class="active">All</button>
     <button onclick="setActive(this, 'wordpress')">WordPress</button>
     <button onclick="setActive(this, 'shopify')">Shopify</button>
     <button onclick="setActive(this, 'html')">HTML/CSS</button>
   </div>
+</section>
 
+<!-- PROJECTS -->
+<section id="projects">
+  <h2>Projects</h2>
   <p class="note">*Client projects – live links not shared due to confidentiality*</p>
 
   <div class="project-grid">
 
     <div class="project-card wordpress" onclick="openModal('wp')">
-      <img src="images/projects/wp1.jpg">
-      <h3>Business Website</h3>
-      <p class="tech">WordPress | Elementor | Responsive Design</p>
+      <img src="project1.jpg">
+      <h3>Business Website (WordPress)</h3>
     </div>
 
     <div class="project-card shopify" onclick="openModal('shopify')">
-      <img src="images/projects/shop1.jpg">
-      <h3>E-commerce Store</h3>
-      <p class="tech">Shopify | UI/UX | Mobile Optimization</p>
+      <img src="project2.jpg">
+      <h3>E-commerce Store (Shopify)</h3>
     </div>
 
     <div class="project-card html" onclick="openModal('html')">
-      <img src="images/projects/html1.jpg">
-      <h3>Landing Page</h3>
-      <p class="tech">HTML | CSS | Performance Optimized</p>
+      <img src="project3.jpg">
+      <h3>Landing Page (HTML/CSS)</h3>
     </div>
 
   </div>
@@ -82,25 +82,18 @@
 <!-- CONTACT -->
 <section id="contact">
   <h2>Contact</h2>
-
-  <a href="mailto:shukla.haldar341@gmail.com">E-mail</a> | 
-  <a href="#">LinkedIn</a>
+  <p>Email: shukla.haldar341@gmail.com</p>
+  <p>
+    <a href="#">LinkedIn</a> | 
+    <a href="#">GitHub</a>
+  </p>
 </section>
 
-<!-- 🔥 MODAL WITH SLIDER -->
+<!-- MODAL -->
 <div id="modal" class="modal">
   <div class="modal-content">
     <span onclick="closeModal()" class="close">&times;</span>
-
     <h2 id="modal-title"></h2>
-
-    <img id="modal-image" src="">
-
-    <div class="slider-controls">
-      <button onclick="prevImage()">Prev</button>
-      <button onclick="nextImage()">Next</button>
-    </div>
-
     <p id="modal-text"></p>
   </div>
 </div>
