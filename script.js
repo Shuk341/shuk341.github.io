@@ -1,5 +1,5 @@
 // Typing
-let text = "WordPress | Shopify | Wix | Bootstrap";
+let text = "Web Developer | WordPress | Shopify Specialist";
 let i = 0;
 
 function typing() {
@@ -27,27 +27,58 @@ function setActive(button, category) {
   });
 }
 
-// Modal
+// 🔥 IMAGE SLIDER LOGIC
+let currentImages = [];
+let currentIndex = 0;
+
 function openModal(type) {
-  let title = document.getElementById("modal-title");
-  let text = document.getElementById("modal-text");
+  const title = document.getElementById("modal-title");
+  const text = document.getElementById("modal-text");
 
   if (type === "wp") {
+    currentImages = [
+      "images/projects/wp1.jpg",
+      "images/projects/wp2.jpg"
+    ];
     title.innerText = "Business Website";
-    text.innerText = "Developed a responsive WordPress website using Elementor/Divi with focus on UI, performance and mobile optimization.";
+    text.innerText = "Developed responsive WordPress website with UI optimization and mobile responsiveness.";
   }
 
   if (type === "shopify") {
-    title.innerText = "E-commerce Store";
-    text.innerText = "Built Shopify store with product pages, cart system and optimized user experience.";
+    currentImages = [
+      "images/projects/shop1.jpg",
+      "images/projects/shop2.jpg"
+    ];
+    title.innerText = "Shopify Store";
+    text.innerText = "Built e-commerce store with optimized UX and mobile performance.";
   }
 
   if (type === "html") {
+    currentImages = [
+      "images/projects/html1.jpg"
+    ];
     title.innerText = "Landing Page";
-    text.innerText = "Created responsive landing page using HTML and CSS with clean UI.";
+    text.innerText = "Designed responsive landing page using HTML & CSS.";
   }
 
+  currentIndex = 0;
+  showImage();
+
   document.getElementById("modal").style.display = "flex";
+}
+
+function showImage() {
+  document.getElementById("modal-image").src = currentImages[currentIndex];
+}
+
+function nextImage() {
+  currentIndex = (currentIndex + 1) % currentImages.length;
+  showImage();
+}
+
+function prevImage() {
+  currentIndex = (currentIndex - 1 + currentImages.length) % currentImages.length;
+  showImage();
 }
 
 function closeModal() {
