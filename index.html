@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shukla Haldar | Web Developer</title>
-
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
@@ -14,7 +13,8 @@
 <!-- HERO -->
 <section class="hero">
   <h1>Hi, I'm <span>Shukla Haldar</span></h1>
-  <p class="tagline">Web Developer</p>
+  <p class="tagline">WordPress & Shopify Developer  <br>
+Building responsive, high-performing websites with a data-driven approach</p>
   <p id="typing"></p>
 </section>
 
@@ -47,8 +47,8 @@
   <div class="project-grid">
 
     <div class="project-card wordpress" onclick="openModal('wp')">
-      <img src="project1.jpg">
-      <h3>Business Website (WordPress)</h3>
+      <img src="images/projects/wp1.jpg">
+      <h3>Business Website</h3>
     </div>
 
     <div class="project-card shopify" onclick="openModal('shopify')">
@@ -77,7 +77,16 @@
 <div id="modal" class="modal">
   <div class="modal-content">
     <span onclick="closeModal()" class="close">&times;</span>
+
     <h2 id="modal-title"></h2>
+
+    <img id="modal-image" src="">
+    
+    <div class="slider-controls">
+      <button onclick="prevImage()">Prev</button>
+      <button onclick="nextImage()">Next</button>
+    </div>
+
     <p id="modal-text"></p>
   </div>
 </div>
