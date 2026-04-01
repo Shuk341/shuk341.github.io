@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shukla Haldar | Web Developer</title>
+
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
@@ -13,18 +14,26 @@
 <!-- HERO -->
 <section class="hero">
   <h1>Hi, I'm <span>Shukla Haldar</span></h1>
-  <p class="tagline">Web Developer </p
+  
+  <!-- FIXED ERROR HERE -->
+  <p class="tagline">Web Developer</p>
+
   <p id="typing"></p>
-  <p class="tagline">Building responsive, high-performing websites with a data-driven approach</p>
+
+  <p class="tagline">
+    Building responsive, high-performing websites with a data-driven approach
+  </p>
 </section>
 
 <!-- ABOUT -->
 <section id="about">
   <h2>About Me</h2>
-    <p>
-      Developed multiple client websites using WordPress, Shopify, and Wix. 
-      Worked on UI implementation, responsiveness, customization, and performance optimization.
-    </p>
+
+  <p>
+    Developed multiple client websites using WordPress, Shopify, and Wix. 
+    Worked on UI implementation, responsiveness, customization, and performance optimization.
+  </p>
+
   <ul class="about-list">
     <li>Experienced in WordPress, Shopify, Wix & frontend development</li>
     <li>Built responsive business & e-commerce websites</li>
@@ -33,51 +42,68 @@
   </ul>
 </section>
 
-
 <!-- PROJECTS -->
 <section id="projects">
   <h2>Projects</h2>
   
+  <!-- TABS -->
   <div class="tabs">
     <button onclick="setActive(this, 'all')" class="active">All</button>
     <button onclick="setActive(this, 'wordpress')">WordPress</button>
     <button onclick="setActive(this, 'shopify')">Shopify</button>
     <button onclick="setActive(this, 'html')">HTML/CSS</button>
   </div>
-  
+
   <p class="note">*Client projects – live links not shared due to confidentiality*</p>
 
   <div class="project-grid">
 
     <div class="project-card wordpress" onclick="openModal('wp')">
-      <img src="project1.jpg">
+      <img src="images/projects/wp1.jpg">
       <h3>Business Website</h3>
       <p class="tech">WordPress | Elementor | Responsive Design</p>
     </div>
 
     <div class="project-card shopify" onclick="openModal('shopify')">
-      <img src="project2.jpg">
+      <img src="images/projects/shop1.jpg">
       <h3>E-commerce Store</h3>
       <p class="tech">Shopify | UI/UX | Mobile Optimization</p>
     </div>
 
     <div class="project-card html" onclick="openModal('html')">
-      <img src="project3.jpg">
+      <img src="images/projects/html1.jpg">
       <h3>Landing Page</h3>
       <p class="tech">HTML | CSS | Performance Optimized</p>
     </div>
 
   </div>
 </section>
-</section>
 
 <!-- CONTACT -->
 <section id="contact">
   <h2>Contact</h2>
-   <a href="mailto:shukla.haldar341@gmail.com">E-mail</a> | 
-   <a href="#">LinkedIn</a>
-    
+
+  <a href="mailto:shukla.haldar341@gmail.com">E-mail</a> | 
+  <a href="#">LinkedIn</a>
 </section>
+
+<!-- 🔥 MODAL WITH SLIDER -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span onclick="closeModal()" class="close">&times;</span>
+
+    <h2 id="modal-title"></h2>
+
+    <img id="modal-image" src="">
+
+    <div class="slider-controls">
+      <button onclick="prevImage()">Prev</button>
+      <button onclick="nextImage()">Next</button>
+    </div>
+
+    <p id="modal-text"></p>
+  </div>
+</div>
 
 <script src="script.js"></script>
 
